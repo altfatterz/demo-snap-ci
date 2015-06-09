@@ -10,6 +10,7 @@ import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.PropertySource;
@@ -19,6 +20,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 
 @Configuration
+@Profile("dev-test")
 public class EmbeddedRedisConfiguration {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(EmbeddedRedisConfiguration.class);

@@ -30,7 +30,13 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
-    testCompile("org.springframework.boot:spring-boot-starter-test") 
+
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("com.github.fakemongo:fongo:1.6.2")
+}
+
+test {
+    testLogging.showStandardStreams = true
 }
 
 task wrapper(type: Wrapper) {

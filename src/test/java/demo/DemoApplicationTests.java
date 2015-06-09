@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @SpringApplicationConfiguration(classes = DemoApplication.class)
 public class DemoApplicationTests {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(EmbeddedMongoDBConfiguration.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(DemoApplication.class);
 
 	@Test
 	public void contextLoads() {

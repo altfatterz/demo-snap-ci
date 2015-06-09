@@ -20,7 +20,6 @@ import java.io.IOException;
 import java.net.ServerSocket;
 
 @Configuration
-@Profile("dev-test")
 public class EmbeddedRedisConfiguration {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(EmbeddedRedisConfiguration.class);
